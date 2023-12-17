@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/img/behonest.svg">
+  <link rel="stylesheet" href="/assets/css/dashboard.css">
+</head>
+
+<body>
+  <h1 id="welcome"></h1>
+  <div class="grid-container" id="gridContainer">
+    <!-- Add more grid items as needed -->
+    <div class="add-box-btn" onclick="openPopup()">+</div>
+  </div>
+  <div class="popup" id="popup">
+    <div class="input__container" id="input__container">
+      <span class="close-btn" onclick="closePopup()">x</span>
+      <h1>Be:Honest®</h1>
+      <br />
+      <label class="input__label">Name of the Group:</label>
+      <input id="boxName" placeholder="Prom" class="input" type="name">
+      <label class="input__label">Link to it.</label>
+      <input id="boxInfo" placeholder="behonest/example" class="input" type="text">
+
+      <button onclick="addBox()" class="button">
+        <div class="button-overlay"></div>
+        <span>Create <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 53 58" height="58" width="53">
+            <path stroke-width="9" stroke="currentColor"
+              d="M44.25 36.3612L17.25 51.9497C11.5833 55.2213 4.5 51.1318 4.50001 44.5885L4.50001 13.4115C4.50001 6.86824 11.5833 2.77868 17.25 6.05033L44.25 21.6388C49.9167 24.9104 49.9167 33.0896 44.25 36.3612Z">
+            </path>
+          </svg></span>
+
+      </button>
+    </div>
+  </div>
+
+  <div class="popup" id="deleteConfirmPopup">
+    <div class="input__container" id="input__container">
+      <span class="close-btn" onclick="closeDeleteConfirm()">x</span>
+      <h2>Delete Box</h2>
+      <p>Are you sure you want to delete this box?</p>
+      <div class="confirm-btns">
+        <button class="cancel-btn" onclick="deleteBoxCancel()">Cancel</button>
+        <button class="confirm-btn" onclick="deleteBoxConfirm()">Delete</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="/assets/js/dashboard.js"></script>
+</body>
+
+</html>

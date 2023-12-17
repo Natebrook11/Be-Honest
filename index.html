@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZP0JMWG7S6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('set', 'page', window.location.pathname);
+        gtag('send', 'pageview');
+
+        gtag('config', 'G-ZP0JMWG7S6');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Be:Honest®</title>
+    <meta name="description"
+        content="Capture authenticity with Be:Honest® - the ultimate Disposable Camera App. Craft your unique moments effortlessly.">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:url" content="https://behonest.netlify.app">
+    <meta property="og:title" content="Be:Honest® - Capture Authentic Moments with Our Disposable Camera App">
+    <meta property="og:description"
+        content="Unleash the power of Be:Honest® - where every snap transforms into a timeless memory. Authenticity in every shot.">
+    <meta property="og:site_name" content="Be:Honest®" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/Natebrook11/Be-Honest/main/assets/img/capture.png">
+
+    <link rel="canonical" href="https://behonest.netlify.app">
+
+    <link rel="icon" href="/assets/img/behonest.svg">
+
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+    <link href="/assets/css/uikit.min.css" rel="stylesheet">
+    <link href="/assets/css/navigation.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body data-barba="wrapper">
+    <div class="loading-container">
+        <div class="loading-screen">
+            <svg class="loading-svg" width="40" height="40">
+                <path
+                    d="M40 .062v13.366l-9.539 9.54v7.008L20.43 40V23.577L33.345 10.67V6.718h-3.952L16.478 19.626H.062L10.087 9.6h7.008l9.54-9.539H40zM8.388 25.22H6.51L.062 31.667h8.326V40l6.447-6.447v-8.326H8.388v-.007z"
+                    fill="#FFF" fill-rule="nonzero" />
+            </svg>
+        </div>
+    </div>
+    <div id="gdpr-box" class="cookies-accept">
+        <div class="gdpr-text">
+            <span>We use third party <a href="">cookies</a> in order to personalise your site
+                expierence.</span>
+        </div>
+        <div class="gdpr-button">
+            <div class="btn dark gdpr-button-accept">Accept</div>
+        </div>
+    </div>
+    <main data-barba="container" data-barba-namespace="home" class="main dark main-fade" id="home">
+        <div class="nav-fade"></div>
+        <a class="logo" href="/index.html">
+            <svg width="40" height="40">
+                <path
+                    d="M40 .062v13.366l-9.539 9.54v7.008L20.43 40V23.577L33.345 10.67V6.718h-3.952L16.478 19.626H.062L10.087 9.6h7.008l9.54-9.539H40zM8.388 25.22H6.51L.062 31.667h8.326V40l6.447-6.447v-8.326H8.388v-.007z"
+                    fill="#FFF" fill-rule="nonzero" />
+            </svg>
+            <svg width="338.802783203125px" height="122px" xmlns="http://www.w3.org/2000/svg"
+                viewBox="30.598608398437506 14 438.802783203125 122" preserveAspectRatio="xMidYMid">
+                <defs>
+                    <filter id="editing-hover" x="-100%" y="-100%" width="300%" height="300%">
+                        <feFlood flood-color="#052b4a" result="flood"></feFlood>
+                        <feComposite operator="in" in2="SourceAlpha" in="flood" result="shadow"></feComposite>
+                        <feOffset dx="-3.5" dy="-3.5" in="SourceGraphic" result="offset-1"></feOffset>
+                        <feOffset dx="3.5" dy="3.5" in="shadow" result="offset-2"></feOffset>
+                        <feMerge>
+                            <feMergeNode in="offset-2"></feMergeNode>
+                            <feMergeNode in="offset-1"></feMergeNode>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <g filter="url(#editing-hover)">
+                    <g transform="translate(97.57680967450142, 97.07999992370605)">
+                        <path
+                            d="M0.45-0.32L0.45-0.32L8.51-42.24L8.51-42.24Q16.06-42.88 20.93-42.88L20.93-42.88L20.93-42.88Q25.79-42.88 28.93-42.46L28.93-42.46L28.93-42.46Q32.06-42.05 34.18-40.96L34.18-40.96L34.18-40.96Q38.40-38.91 38.40-33.28L38.40-33.28L38.40-33.28Q38.40-30.02 35.58-27.26L35.58-27.26L35.58-27.26Q32.96-24.77 30.08-24.19L30.08-24.19L30.08-24.19Q33.15-23.68 35.33-21.38L35.33-21.38L35.33-21.38Q37.63-18.94 37.63-15.17L37.63-15.17L37.63-15.17Q37.63-7.87 32.19-3.62L32.19-3.62L32.19-3.62Q26.75 0.64 16.06 0.64L16.06 0.64L16.06 0.64Q8.70 0.64 0.45-0.32ZM17.86-20.61L14.66-4.03L14.66-4.03Q15.23-3.97 15.36-3.97L15.36-3.97L15.94-3.97L15.94-3.97Q21.18-3.97 23.42-7.42L23.42-7.42L23.42-7.42Q25.09-10.11 25.09-15.04L25.09-15.04L25.09-15.04Q25.09-17.66 23.39-19.07L23.39-19.07L23.39-19.07Q21.70-20.48 17.86-20.61L17.86-20.61ZM27.58-33.22L27.58-33.22L27.58-33.22Q27.58-38.53 22.46-38.53L22.46-38.53L21.89-38.53L21.89-38.53Q21.63-38.53 21.25-38.46L21.25-38.46L18.69-24.96L19.33-24.96L19.33-24.96Q27.58-25.15 27.58-33.22ZM67.78-10.82L67.78-10.82L67.78-10.82Q69.38-9.73 69.38-7.33L69.38-7.33L69.38-7.33Q69.38-4.93 68.16-3.39L68.16-3.39L68.16-3.39Q66.94-1.86 64.96-0.83L64.96-0.83L64.96-0.83Q60.86 1.28 56.45 1.28L56.45 1.28L56.45 1.28Q52.03 1.28 49.44 0.32L49.44 0.32L49.44 0.32Q46.85-0.64 45.12-2.43L45.12-2.43L45.12-2.43Q41.73-5.82 41.73-12.03L41.73-12.03L41.73-12.03Q41.73-21.70 46.98-27.58L46.98-27.58L46.98-27.58Q52.61-33.92 62.40-33.92L62.40-33.92L62.40-33.92Q68.48-33.92 71.49-31.36L71.49-31.36L71.49-31.36Q73.73-29.44 73.73-26.30L73.73-26.30L73.73-26.30Q73.73-15.04 54.27-15.04L54.27-15.04L54.27-15.04Q54.02-13.38 54.02-11.97L54.02-11.97L54.02-11.97Q54.02-9.02 55.33-7.90L55.33-7.90L55.33-7.90Q56.64-6.78 59.07-6.78L59.07-6.78L59.07-6.78Q61.50-6.78 64.10-7.90L64.10-7.90L64.10-7.90Q66.69-9.02 67.78-10.82ZM54.72-17.79L54.72-17.79L54.72-17.79Q59.26-17.79 61.89-20.61L61.89-20.61L61.89-20.61Q64.51-23.30 64.51-27.58L64.51-27.58L64.51-27.58Q64.51-29.06 63.97-29.86L63.97-29.86L63.97-29.86Q63.42-30.66 62.34-30.66L62.34-30.66L62.34-30.66Q61.25-30.66 60.32-30.24L60.32-30.24L60.32-30.24Q59.39-29.82 58.43-28.42L58.43-28.42L58.43-28.42Q56.06-25.22 54.72-17.79ZM74.75-3.78L74.75-3.78L74.75-3.78Q74.75-6.21 76.64-7.55L76.64-7.55L76.64-7.55Q78.53-8.90 81.22-8.90L81.22-8.90L81.22-8.90Q83.90-8.90 85.54-7.55L85.54-7.55L85.54-7.55Q87.17-6.21 87.17-3.78L87.17-3.78L87.17-3.78Q87.17-1.34 85.34-0.03L85.34-0.03L85.34-0.03Q83.52 1.28 80.83 1.28L80.83 1.28L80.83 1.28Q78.14 1.28 76.45-0.03L76.45-0.03L76.45-0.03Q74.75-1.34 74.75-3.78ZM80-28.80L80-28.80L80-28.80Q80-31.23 81.89-32.58L81.89-32.58L81.89-32.58Q83.78-33.92 86.46-33.92L86.46-33.92L86.46-33.92Q89.15-33.92 90.78-32.58L90.78-32.58L90.78-32.58Q92.42-31.23 92.42-28.80L92.42-28.80L92.42-28.80Q92.42-26.37 90.59-25.06L90.59-25.06L90.59-25.06Q88.77-23.74 86.08-23.74L86.08-23.74L86.08-23.74Q83.39-23.74 81.70-25.06L81.70-25.06L81.70-25.06Q80-26.37 80-28.80ZM118.98-4.80L118.98-4.80L118.98-4.80Q118.98-9.28 120.77-18.24L120.77-18.24L111.30-18.24L107.78 0L94.40 0L102.53-42.24L116.03-42.24L112.32-23.36L121.79-23.36L125.31-42.24L138.82-42.24L138.82-42.24Q137.92-37.50 136.77-32.19L136.77-32.19L134.59-21.76L134.59-21.76Q132.16-9.60 132.16-4.29L132.16-4.29L132.16-4.29Q132.16-2.11 132.86-0.90L132.86-0.90L132.86-0.90Q129.66 1.28 125.92 1.28L125.92 1.28L125.92 1.28Q122.18 1.28 120.58-0.51L120.58-0.51L120.58-0.51Q118.98-2.30 118.98-4.80ZM154.30 1.28L154.30 1.28L154.30 1.28Q140.22 1.28 140.22-11.97L140.22-11.97L140.22-11.97Q140.22-21.38 145.41-27.46L145.41-27.46L145.41-27.46Q150.91-33.92 160.45-33.92L160.45-33.92L160.45-33.92Q167.36-33.92 170.88-30.72L170.88-30.72L170.88-30.72Q174.40-27.52 174.40-20.80L174.40-20.80L174.40-20.80Q174.40-10.56 168.90-4.61L168.90-4.61L168.90-4.61Q163.52 1.28 154.30 1.28ZM155.97-26.56L155.97-26.56L155.97-26.56Q155.20-24.83 154.59-22.24L154.59-22.24L154.59-22.24Q153.98-19.65 153.22-15.55L153.22-15.55L153.22-15.55Q152.45-11.46 152.45-6.40L152.45-6.40L152.45-6.40Q152.45-4.74 152.99-3.65L152.99-3.65L152.99-3.65Q153.54-2.56 155.01-2.56L155.01-2.56L155.01-2.56Q156.48-2.56 157.41-3.26L157.41-3.26L157.41-3.26Q158.34-3.97 159.04-5.63L159.04-5.63L159.04-5.63Q160.32-8.58 161.34-14.05L161.34-14.05L161.34-14.05Q162.37-19.52 162.46-21.89L162.46-21.89L162.46-21.89Q162.56-24.26 162.56-26.02L162.56-26.02L162.56-26.02Q162.56-27.78 162.05-28.93L162.05-28.93L162.05-28.93Q161.54-30.08 160.10-30.08L160.10-30.08L160.10-30.08Q158.66-30.08 157.70-29.18L157.70-29.18L157.70-29.18Q156.74-28.29 155.97-26.56ZM205.25 1.28L205.25 1.28L205.25 1.28Q197.50 1.28 197.50-4.74L197.50-4.74L197.50-4.74Q197.57-6.40 198.08-9.22L198.08-9.22L199.23-15.10L199.23-15.10Q200.96-23.42 200.96-25.28L200.96-25.28L200.96-25.28Q200.96-28.99 198.78-28.99L198.78-28.99L198.78-28.99Q195.14-28.99 193.22-19.46L193.22-19.46L189.44 0L176.58 1.28L183.23-32.70L193.73-33.92L192.70-27.65L192.70-27.65Q195.71-33.92 204.93-33.92L204.93-33.92L204.93-33.92Q209.41-33.92 211.30-32.03L211.30-32.03L211.30-32.03Q213.18-30.14 213.18-25.92L213.18-25.92L213.18-25.92Q213.18-21.95 211.14-12.67L211.14-12.67L211.14-12.67Q210.18-8.51 210.18-6.94L210.18-6.94L210.18-6.94Q210.18-5.38 211.04-4.48L211.04-4.48L211.04-4.48Q211.90-3.58 213.18-3.46L213.18-3.46L213.18-3.46Q212.54-1.28 210.34 0L210.34 0L210.34 0Q208.13 1.28 205.25 1.28ZM244.22-10.82L244.22-10.82L244.22-10.82Q245.82-9.73 245.82-7.33L245.82-7.33L245.82-7.33Q245.82-4.93 244.61-3.39L244.61-3.39L244.61-3.39Q243.39-1.86 241.41-0.83L241.41-0.83L241.41-0.83Q237.31 1.28 232.90 1.28L232.90 1.28L232.90 1.28Q228.48 1.28 225.89 0.32L225.89 0.32L225.89 0.32Q223.30-0.64 221.57-2.43L221.57-2.43L221.57-2.43Q218.18-5.82 218.18-12.03L218.18-12.03L218.18-12.03Q218.18-21.70 223.42-27.58L223.42-27.58L223.42-27.58Q229.06-33.92 238.85-33.92L238.85-33.92L238.85-33.92Q244.93-33.92 247.94-31.36L247.94-31.36L247.94-31.36Q250.18-29.44 250.18-26.30L250.18-26.30L250.18-26.30Q250.18-15.04 230.72-15.04L230.72-15.04L230.72-15.04Q230.46-13.38 230.46-11.97L230.46-11.97L230.46-11.97Q230.46-9.02 231.78-7.90L231.78-7.90L231.78-7.90Q233.09-6.78 235.52-6.78L235.52-6.78L235.52-6.78Q237.95-6.78 240.54-7.90L240.54-7.90L240.54-7.90Q243.14-9.02 244.22-10.82ZM231.17-17.79L231.17-17.79L231.17-17.79Q235.71-17.79 238.34-20.61L238.34-20.61L238.34-20.61Q240.96-23.30 240.96-27.58L240.96-27.58L240.96-27.58Q240.96-29.06 240.42-29.86L240.42-29.86L240.42-29.86Q239.87-30.66 238.78-30.66L238.78-30.66L238.78-30.66Q237.70-30.66 236.77-30.24L236.77-30.24L236.77-30.24Q235.84-29.82 234.88-28.42L234.88-28.42L234.88-28.42Q232.51-25.22 231.17-17.79ZM271.49-22.46L271.49-22.46L271.49-22.46Q272.38-24.83 272.38-26.88L272.38-26.88L272.38-26.88Q272.38-30.66 269.31-30.66L269.31-30.66L269.31-30.66Q267.71-30.66 266.40-29.22L266.40-29.22L266.40-29.22Q265.09-27.78 265.09-25.98L265.09-25.98L265.09-25.98Q265.09-24.70 266.11-23.68L266.11-23.68L266.11-23.68Q267.58-22.27 271.36-19.97L271.36-19.97L271.36-19.97Q275.14-17.66 276.58-15.78L276.58-15.78L276.58-15.78Q278.02-13.89 278.02-11.30L278.02-11.30L278.02-11.30Q278.02-8.70 276.77-6.34L276.77-6.34L276.77-6.34Q275.52-3.97 273.28-2.30L273.28-2.30L273.28-2.30Q268.48 1.28 260.80 1.28L260.80 1.28L260.80 1.28Q256.64 1.28 253.44-0.90L253.44-0.90L253.44-0.90Q250.24-3.01 250.24-5.50L250.24-5.50L250.24-5.50Q250.24-8 252.06-9.47L252.06-9.47L252.06-9.47Q253.89-10.94 256.58-10.94L256.58-10.94L256.58-10.94Q259.26-10.94 260.93-9.92L260.93-9.92L260.93-9.92Q260.10-7.81 260.10-6.40L260.10-6.40L260.10-6.40Q260.10-2.18 263.68-2.18L263.68-2.18L263.68-2.18Q265.22-2.18 266.24-3.14L266.24-3.14L266.24-3.14Q267.26-4.10 267.26-5.76L267.26-5.76L267.26-5.76Q267.26-9.02 261.76-12.48L261.76-12.48L261.76-12.48Q257.28-15.42 256.26-16.58L256.26-16.58L256.26-16.58Q254.53-18.62 254.53-21.18L254.53-21.18L254.53-21.18Q254.53-23.74 255.74-26.18L255.74-26.18L255.74-26.18Q256.96-28.61 259.20-30.34L259.20-30.34L259.20-30.34Q263.87-33.92 272-33.92L272-33.92L272-33.92Q276.16-33.92 278.62-32.26L278.62-32.26L278.62-32.26Q281.09-30.59 281.09-27.78L281.09-27.78L281.09-27.78Q281.09-24.96 279.39-23.36L279.39-23.36L279.39-23.36Q277.70-21.76 274.62-21.76L274.62-21.76L274.62-21.76Q272.51-21.76 271.49-22.46ZM284.48-6.40L284.48-6.40L284.48-6.40Q284.48-8.13 285.38-12.48L285.38-12.48L288.77-29.76L284.99-29.76L285.25-31.68L285.25-31.68Q292.93-33.98 300.35-39.62L300.35-39.62L303.42-39.62L301.89-32.64L306.88-32.64L306.30-29.76L301.38-29.76L298.11-12.48L298.11-12.48Q297.28-8.51 297.28-7.17L297.28-7.17L297.28-7.17Q297.28-4.10 299.97-3.46L299.97-3.46L299.97-3.46Q299.33-1.28 297.02 0L297.02 0L297.02 0Q294.72 1.28 291.46 1.28L291.46 1.28L291.46 1.28Q288.19 1.28 286.34-0.77L286.34-0.77L286.34-0.77Q284.48-2.82 284.48-6.40Z"
+                            fill="#ffd5af"></path>
+                    </g>
+                </g>
+            </svg>
+        </a>
+        <nav>
+            <div class="wrap-block">
+                <ul>
+                    <li class="active">
+                        <a href="/index.html">
+                            <span>
+                                <h1 class="big row2">
+                                    <div class="btn-bg"></div>Home
+                                </h1>
+                                <h1 class="big row1">Home</h1>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="">
+                            <span>
+                                <h1 class="big row2">
+                                    <div class="btn-bg"></div>Archive
+                                </h1>
+                                <h1 class="big row1">Archive</h1>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="">
+                            <span>
+                                <h1 class="big row2">
+                                    <div class="btn-bg"></div>Jobs
+                                </h1>
+                                <h1 class="big row1">Jobs</h1>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="">
+                            <span>
+                                <h1 class="big row2">
+                                    <div class="btn-bg"></div>Contact
+                                </h1>
+                                <h1 class="big row1">Contact</h1>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/index.html">
+                            <span>
+                                <h1 class="big row2">
+                                    <div class="btn-bg"></div>Home
+                                </h1>
+                                <h1 class="big row1">Home</h1>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-info">
+                    <div class="nav-info-row">
+                        <p><a href="https://nbrook.netlify.app">Code By NateBrook</a></p>
+                    </div>
+                    <!-- <div class="nav-info-row">
+                        <p><a href="mailto:hello@onenil.com">hello@onenil.com</a></p>
+                        <p><a href="tel:+31616014546">+31 6 16014546</a></p>
+                    </div> -->
+                    <div class="nav-info-row social-hover">
+                        <p><a href="" target="_blank">Twitter</a></p>
+                        <p><a href="" target="_blank">Instagram</a></p>
+                        <p><a href="" target="_blank">LinkedIn</a></p>
+                        <img class="social-sticker" data-src="/assets/img/OneNil_2021_Sticker_VOL1_FOLLOW.png" uk-img />
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <a onclick="loginlink()" class="btn nav-cta-btn">
+            <div class="btn-bg"></div>
+            <span>Log In</span>
+        </a>
+        <div class="nav-icon">
+            <div class="hamburger-bar"></div>
+        </div>
+
+        <header class="section default-header full-height home-header">
+            <div class="header-image desktop zoom"
+                style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                data-src="https://images.pexels.com/photos/772803/pexels-photo-772803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                uk-img uk-parallax="opacity: 1, 0; easing: 0;"></div>
+            <div class="header-image mobile zoom"
+                style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                data-src="https://images.pexels.com/photos/772803/pexels-photo-772803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                uk-img>
+            </div>
+            <div class="dark-overlay"></div>
+
+            <div class="home-header-animation">
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://cdn.discordapp.com/attachments/1010545343315837070/1178408012029902969/1701024749790.webp?ex=657608fb&is=656393fb&hm=2fe244a6f54be25290be81bd01f4a56789c9d68cf7325fbc76c7bb0e73e72a75&"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408012403179643/1701024749806.jpg?ex=657608fb&is=656393fb&hm=704ebc3d13e991cbb65256a77803cfd5d3969592321d67a3ee4c82c2ae2e0a0f&=&format=webp&width=315&height=701"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408012717772911/1701024749823.jpg?ex=657608fb&is=656393fb&hm=613b2c28603fc6648ba70a9638204d97db5fd467a1809c08a8f75a3dab671507&=&format=webp&width=315&height=701"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408012969426974/1701024749840.jpg?ex=657608fc&is=656393fc&hm=2043041fd62049cac6da46cbab3a1dd9b7722efc90762fb416faef2041281e18&=&format=webp&width=559&height=701"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408013242040320/1701024749861.jpg?ex=657608fc&is=656393fc&hm=4b7e04751d14ebf419a0c9d0096409b4e6f82945c8506af50c7d1c76f1b9295c&=&format=webp&width=452&height=701"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408013590188113/1701024749878.jpg?ex=657608fc&is=656393fc&hm=69feedb3e15822ef81a4e3ecd2d4b00c3429f501d98cc596f98c3d7dd234bb76&=&format=webp&width=315&height=701"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408013913145466/1701024749898.jpg?ex=657608fc&is=656393fc&hm=d22921cd183d76c8038d19828da1b5da2af15de0326cc3a638ff188080152adf&=&format=webp&width=1439&height=647"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408014617772062/1701024749917.jpg?ex=657608fc&is=656393fc&hm=79af52dcc8fa0a1ef18b77fdb86ee8f39932c59452c62f956964a0451ce98b7b&=&format=webp&width=1439&height=647"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408015230161108/1701024749935.webp?ex=657608fc&is=656393fc&hm=b918bb9900a47ac63545dcfb81d5c9ca16287d2ca54c40fd57c3fb9726810b30&=&format=webp&width=394&height=701"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408015578284143/1701024749951.jpg?ex=657608fc&is=656393fc&hm=696a78d270e99f7c29ce3de0fe4b0be6b9de846e33fc7d7902327d8c2ed4e720&=&format=webp&width=315&height=701"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://cdn.discordapp.com/attachments/1010545343315837070/1178408012029902969/1701024749790.webp?ex=657608fb&is=656393fb&hm=2fe244a6f54be25290be81bd01f4a56789c9d68cf7325fbc76c7bb0e73e72a75&"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408012403179643/1701024749806.jpg?ex=657608fb&is=656393fb&hm=704ebc3d13e991cbb65256a77803cfd5d3969592321d67a3ee4c82c2ae2e0a0f&=&format=webp&width=315&height=701"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408012717772911/1701024749823.jpg?ex=657608fb&is=656393fb&hm=613b2c28603fc6648ba70a9638204d97db5fd467a1809c08a8f75a3dab671507&=&format=webp&width=315&height=701"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408012969426974/1701024749840.jpg?ex=657608fc&is=656393fc&hm=2043041fd62049cac6da46cbab3a1dd9b7722efc90762fb416faef2041281e18&=&format=webp&width=559&height=701"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408013242040320/1701024749861.jpg?ex=657608fc&is=656393fc&hm=4b7e04751d14ebf419a0c9d0096409b4e6f82945c8506af50c7d1c76f1b9295c&=&format=webp&width=452&height=701"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408013590188113/1701024749878.jpg?ex=657608fc&is=656393fc&hm=69feedb3e15822ef81a4e3ecd2d4b00c3429f501d98cc596f98c3d7dd234bb76&=&format=webp&width=315&height=701"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408013913145466/1701024749898.jpg?ex=657608fc&is=656393fc&hm=d22921cd183d76c8038d19828da1b5da2af15de0326cc3a638ff188080152adf&=&format=webp&width=1439&height=647"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408014617772062/1701024749917.jpg?ex=657608fc&is=656393fc&hm=79af52dcc8fa0a1ef18b77fdb86ee8f39932c59452c62f956964a0451ce98b7b&=&format=webp&width=1439&height=647"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408015230161108/1701024749935.webp?ex=657608fc&is=656393fc&hm=b918bb9900a47ac63545dcfb81d5c9ca16287d2ca54c40fd57c3fb9726810b30&=&format=webp&width=394&height=701"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+                <div class="slide"
+                    style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                    data-src="https://media.discordapp.net/attachments/1010545343315837070/1178408015578284143/1701024749951.jpg?ex=657608fc&is=656393fc&hm=696a78d270e99f7c29ce3de0fe4b0be6b9de846e33fc7d7902327d8c2ed4e720&=&format=webp&width=315&height=701"
+                    data-sizes="(min-width: 640px) 640px, 100vw" uk-img></div>
+            </div>
+            <div class="wrap-block">
+                <h1 style="font-weight: 600;" class="tricks big">The Best Disposable Camera App</h1>
+                <p class="animate-fade-in">Capturing Moments, Crafting Memories, Timeless memories, Unique moments.
+                    <br>Developed By Nate Brook Junior Software Engineer
+                </p>
+                <div class="ignite animate-fade-in">
+                    <svg class="rotate" width="180" height="180">
+                        <g fill="#FFF" fill-rule="nonzero">
+                            <path
+                                d="M1.742 71.34l10.087 1.31-.224 1.731-4.324-.561-1.291 9.944 4.325.562-.225 1.729L0 84.745l.225-1.73 4.324.562 1.292-9.944-4.325-.563zM8.836 64.18c-3.01-1.2-4.135-3.715-2.475-7.872 1.66-4.157 4.218-5.2 7.215-4.004 2.998 1.196 4.152 3.737 2.502 7.882-1.65 4.146-4.218 5.201-7.242 3.994zm4.094-10.257c-2.607-1.038-4.068.035-5.22 2.924-1.152 2.889-.847 4.67 1.773 5.714 2.62 1.043 4.098-.038 5.245-2.914 1.147-2.875.82-4.68-1.798-5.724zM26.563 38.78l1.188.83-6.01 8.56-8.322-5.844L14.42 40.9l7.135 5.01zM38.2 22.29a4.72 4.72 0 01-.39 7.163l-5.423 4.834-6.765-7.591 5.42-4.834a4.723 4.723 0 017.157.429zm-1.301 1.16c-1.933-2.17-3.414-1.822-5.54.073l-3.472 3.093 4.835 5.422 3.47-3.093c2.122-1.894 2.63-3.327.703-5.495h.004zM68.143 3.795L63.038 5.48l2.734 8.278-1.654.547-2.734-8.279-5.105 1.687-.456-1.38 11.865-3.918zM76.188 5.797C75.911 2.57 77.65.436 82.104.05c4.455-.385 6.54 1.434 6.818 4.647.278 3.212-1.475 5.39-5.917 5.774-4.45.385-6.533-1.434-6.817-4.675zm11.002-.949c-.24-2.794-1.858-3.617-4.954-3.35-3.096.269-4.55 1.34-4.31 4.153.241 2.811 1.876 3.643 4.959 3.377 3.083-.266 4.548-1.372 4.305-4.175v-.005zM111.45 12.98l-1.685-.451 2.63-9.826 1.685.451zM126.435 12.861l5.736 2.728-2.316 4.87-1.576-.748.737-1.55a6.517 6.517 0 01-5.223-.423c-3.389-1.61-4.67-4.408-3.267-7.348 1.403-2.94 4.374-3.716 8.156-1.918 3.675 1.748 4.724 4.146 3.863 6.331l-1.575-.75c.281-.928.368-2.705-2.913-4.266-3.86-1.835-5.431.25-5.957 1.35-.525 1.097-1.141 3.644 2.71 5.473 3.02 1.437 4.805.289 5.161-.46l-4.163-1.979.627-1.31zM152.3 24.75l-6.501 7.82-1.933-1.607-1.371-12.19-5.432 6.538-1.342-1.113 6.502-7.82 1.934 1.606 1.368 12.191 5.433-6.539zM151.776 39.52l-1.112-1.34 7.824-6.493 1.112 1.342zM169.906 51.595l-2.653-4.679-7.587 4.301-.86-1.517 7.588-4.302-2.653-4.68 1.264-.717 6.166 10.877zM173.725 61.421l-2.79.816 2.525 8.65-1.394.406-2.526-8.649-2.791.815 2.526 8.65-1.395.407-3.01-10.324 9.765-2.852 3.016 10.324-1.395.408zM178.218 107.374l-10.093-1.233.207-1.73 4.327.528 1.213-9.948-4.325-.529.213-1.73 10.092 1.234-.208 1.73-4.325-.528-1.216 9.948 4.325.527zM171.17 114.588c3.016 1.18 4.16 3.687 2.53 7.854-1.63 4.167-4.183 5.228-7.187 4.054-3.004-1.174-4.18-3.71-2.556-7.865 1.624-4.155 4.18-5.229 7.213-4.043zm-4.022 10.285c2.613 1.02 4.066-.065 5.198-2.96 1.133-2.896.813-4.671-1.812-5.702-2.625-1.03-4.097.068-5.225 2.95-1.128 2.882-.786 4.684 1.84 5.712zM153.628 140.097l-1.197-.83 5.957-8.609 8.369 5.791-.993 1.434-7.174-4.962zM142.109 156.676a4.728 4.728 0 01.341-7.161l5.398-4.879 6.823 7.55-5.392 4.878a4.729 4.729 0 01-7.17-.388zm1.294-1.17c1.95 2.157 3.425 1.8 5.544-.111l3.45-3.12-4.878-5.398-3.45 3.12c-2.11 1.916-2.615 3.353-.666 5.51zM112.277 175.387l5.094-1.72-2.791-8.262 1.65-.558 2.794 8.262 5.093-1.723.465 1.377-11.84 4zM104.202 173.443c.3 3.228-1.43 5.376-5.888 5.788-4.46.412-6.554-1.391-6.85-4.604-.297-3.214 1.44-5.406 5.885-5.818 4.444-.412 6.552 1.389 6.853 4.634zM93.2 174.465c.258 2.794 1.883 3.607 4.982 3.321 3.1-.285 4.544-1.371 4.285-4.18-.26-2.808-1.9-3.633-4.982-3.347-3.083.285-4.547 1.392-4.286 4.206h.001zM68.891 166.488l1.687.44-2.566 9.84-1.686-.44zM53.931 166.715l-5.754-2.688 2.284-4.878 1.58.738-.726 1.557a6.514 6.514 0 015.224.386c3.395 1.587 4.691 4.374 3.315 7.321-1.376 2.948-4.347 3.745-8.14 1.973-3.684-1.721-4.75-4.112-3.904-6.3l1.58.738c-.276.934-.351 2.708 2.941 4.245 3.87 1.807 5.425-.288 5.942-1.395.517-1.106 1.112-3.649-2.746-5.45-3.027-1.416-4.804-.256-5.155.494l4.175 1.95-.616 1.31zM27.972 155.001l6.446-7.865 1.945 1.593 1.453 12.184 5.388-6.574 1.35 1.105-6.448 7.867-1.943-1.594-1.453-12.183-5.39 6.575zM28.395 140.225l1.123 1.334-7.785 6.55-1.123-1.335zM10.197 128.282l2.683 4.658 7.553-4.351.87 1.51-7.552 4.35 2.683 4.657-1.26.727-6.235-10.825zM6.302 118.485l2.786-.835-2.586-8.632 1.393-.415 2.585 8.633 2.785-.83-2.586-8.632 1.392-.415 3.087 10.303-9.746 2.92-3.088-10.303 1.393-.415z" />
+                        </g>
+                    </svg>
+                    <svg width="40" height="40">
+                        <path
+                            d="M40 .062v13.366l-9.539 9.54v7.008L20.43 40V23.577L33.345 10.67V6.718h-3.952L16.478 19.626H.062L10.087 9.6h7.008l9.54-9.539H40zM8.388 25.22H6.51L.062 31.667h8.326V40l6.447-6.447v-8.326H8.388v-.007z"
+                            fill="#FFF" fill-rule="nonzero" />
+                    </svg>
+                    <div class="ignite-desktop"></div>
+                    <div class="ignite-mobile"></div>
+                </div>
+            </div>
+
+            <a href="#projects-intro" class="scroll-down" uk-scroll>
+                <span>Explore</span>
+                <svg width="15" height="12">
+                    <g stroke="#FFF" fill="none" fill-rule="evenodd">
+                        <path d="M8.571 11l5-5-5-5M13.571 6H0" />
+                    </g>
+                </svg>
+            </a>
+        </header>
+
+        <div class="section home-projects-intro" id="projects-intro">
+            <div class="wrap-wide">
+                <h2 class="big">Selected <br>photos</h2>
+                <div class="icon-links">
+                    <a href="" class="icon-link">
+                        <svg width="22" height="18">
+                            <g stroke="#FFF" fill="none" fill-rule="evenodd">
+                                <path d="M1 1h19.556v3.556H1zM18.778 5v12h-16V5M13.889 9H7.667" />
+                            </g>
+                        </svg>
+                        <p>Explore archive</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section projects-grid home-projects-grid" uk-slider="finite: true">
+            <div class="wrap-wide">
+                <ul
+                    class="home-projects-grid-ul uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m animate-fade-in">
+                    <li class="project-thumb dark">
+                        <a href="">
+                            <!-- <div class="project-thumb-back"
+                                style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                                data-src="/media/pages/work/future-goals/2f965abdca-1685445528/01.png"
+                                uk-img></div> -->
+                            <div class="project-thumb-front"
+                                style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                                data-src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                uk-img></div>
+                            <div class="project-thumb-logo"><img
+                                    data-src="assets/img/sandalswhite.svg"
+                                    height="72" width="186" uk-img /></div>
+                            <div class="project-thumb-content">
+                                <h2>Nature</h2>
+                                <p class="small">
+                                    <span>View case</span>
+                                    <svg width="15" height="12">
+                                        <g stroke="#FFF" fill="none" fill-rule="evenodd">
+                                            <path d="M8.571 11l5-5-5-5M13.571 6H0" />
+                                        </g>
+                                    </svg>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-thumb dark">
+                        <a href="">
+                            <!-- <div class="project-thumb-back"
+                                style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                                data-src="/media/pages/work/future-goals/2f965abdca-1685445528/01.png"
+                                uk-img></div> -->
+                            <div class="project-thumb-front"
+                                style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                                data-src="https://images.pexels.com/photos/1820563/pexels-photo-1820563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                uk-img></div>
+                            <div class="project-thumb-logo"><img
+                                    data-src="assets/img/sandalswhite.svg"
+                                    height="72" width="186" uk-img /></div>
+                            <div class="project-thumb-content">
+                                <h2>Nigth</h2>
+                                <p class="small">
+                                    <span>View case</span>
+                                    <svg width="15" height="12">
+                                        <g stroke="#FFF" fill="none" fill-rule="evenodd">
+                                            <path d="M8.571 11l5-5-5-5M13.571 6H0" />
+                                        </g>
+                                    </svg>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-thumb dark">
+                        <a href="">
+                            <!-- <div class="project-thumb-back"
+                                style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                                data-src="/media/pages/work/future-goals/2f965abdca-1685445528/01.png"
+                                uk-img></div> -->
+                            <div class="project-thumb-front"
+                                style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                                data-src="https://images.pexels.com/photos/1028225/pexels-photo-1028225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                uk-img></div>
+                            <div class="project-thumb-logo"><img
+                                    data-src="assets/img/sandalswhite.svg"
+                                    height="72" width="186" uk-img /></div>
+                            <div class="project-thumb-content">
+                                <h2>Mountain</h2>
+                                <p class="small">
+                                    <span>View case</span>
+                                    <svg width="15" height="12">
+                                        <g stroke="#FFF" fill="none" fill-rule="evenodd">
+                                            <path d="M8.571 11l5-5-5-5M13.571 6H0" />
+                                        </g>
+                                    </svg>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section slogan">
+            <div class="overlay" uk-parallax="bgy: -75, 75"
+                style="background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                data-src="/assets/img/b8ff3c9f83-1685445527/rocket-01-1920x1080-q72.jpg" uk-img>
+            </div>
+            <div class="dark-overlay"></div>
+            <div class="wrap-wide">
+                <h2 class="big">Capture It and enjoy the memories</h2>
+            </div>
+        </div>
+        <div class="stripe"></div>
+
+        <div class="section targets">
+            <div class="wrap-wide">
+                <div class="sub-wrap">
+                    <div class="targets-animation"
+                        uk-scrollspy="cls: targets-visible; offset-top: -100; repeat: true; hidden: false;">
+                        <div class="targets-animation-wrapper">
+                            <div class="circle back-circle circle-brands"></div>
+                            <div class="circle back-circle circle-fans"></div>
+                            <div class="circle back-circle circle-sports"></div>
+                            <div class="triangle"><img class="blurry"
+                                    src="/assets/img/targets-triangle-saturated.png" /></div>
+                            <img class="triangle" src="/assets/img/targets-triangle-saturated.png" />
+                            <div class="logo-onenil"><img src="/assets/img/onenil-icon.svg" /></div>
+                            <div class="dotted">
+                                <img class="dotted-img" src="/assets/img/targets-dotted.svg" />
+                            </div>
+                            <div class="circle top-circle circle-brands top-circle-brands">
+                                <h4>Party</h4>
+                            </div>
+                            <div class="circle top-circle circle-fans top-circle-fans">
+                                <h4>Daily Life</h4>
+                            </div>
+                            <div class="circle top-circle circle-sports top-circle-sports">
+                                <h4>Events</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-wrap">
+                    <h2>Capture Authenticity with Be:Honest</h2>
+                    <p>
+                    <p>At Be:Honest, we believe in the power of capturing authentic moments. Our Disposable Camera App
+                        is designed
+                        to transform ordinary snapshots into timeless memories, celebrating the beauty of life's unique
+                        experiences.</p>
+                    <p>Discover the essence of authenticity as every click tells a story. We go beyond ordinary
+                        photography,
+                        offering a seamless blend of creativity and candidness. With Be:Honest, every moment becomes a
+                        work of art.</p>
+                    <p>Join us on a journey to craft memories that speak volumes. Be:Honest - where each shot is a
+                        reflection of
+                        your true self.</p>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="section split-footer">
+            <div class="sub-wrap">
+                <a href="" class="archive">
+                    <div class="split-footer-overlay" style="background: #3B4C56;" uk-img>
+                    </div>
+                    <div class="inner-wrap">
+                        <p>Get inspired by our work</p>
+                        <h2>Explore our infinite archive, full of inspiration.</h2>
+                        <p class="small">
+                            <span>Explore archive</span>
+                            <svg width="15" height="12">
+                                <g stroke="#000" fill="none" fill-rule="evenodd">
+                                    <path d="M8.571 11l5-5-5-5M13.571 6H0"></path>
+                                </g>
+                            </svg>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="sub-wrap">
+                <a href="" class="jobs">
+                    <div class="inner-wrap">
+                        <p>We’re always looking for creatives in the field</p>
+                        <h2>We currently have 0<br> open positions.</h2>
+                        <p class="small">
+                            <span>Explore Jobs</span>
+                            <svg width="15" height="12">
+                                <g stroke="#000" fill="none" fill-rule="evenodd">
+                                    <path d="M8.571 11l5-5-5-5M13.571 6H0"></path>
+                                </g>
+                            </svg>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <svg class="stripe-shape" width="74" height="37">
+                <path fill="#000" d="M1.344 36.64L37 .985 72.656 36.64" fill-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="section prefooter">
+            <div class="wrap-wide">
+                <div class="sub-wrap">
+                    <h2>Need Help? <br><a href="">Get in touch <div class="underline">
+                                <div class="btn-bg"></div>
+                            </div></a></h2>
+                </div>
+                <div class="sub-wrap">
+                    <ul>
+                        <!-- <li>
+                            <p><strong>Sitemap</strong></p>
+                            <p><a href="">Home</a></p>
+                            <p><a href="/work">Work</a></p>
+                            <p><a href="/archive">Archive</a></p>
+                            <p><a href="/jobs">Jobs (2)</a></p>
+                            <p><a href="/contact">Contact</a></p>
+                        </li> -->
+                        <!-- <li>
+                            <p><strong>Address</strong></p>
+                            <p>Sarphatikade 14</p>
+                            <p>1017 WV Amsterdam</p>
+                            <p>Netherlands</p>
+                        </li>
+                        <li>
+                            <p><strong>Contact</strong></p>
+                            <p><a href="mailto:hello@onenil.com">hello@onenil.com</a></p>
+                            <p><a href="tel:+31616014546">+31 6 16014546</a></p>
+                        </li> -->
+                    </ul>
+                    <div class="mobile-legal">
+                        <p class="small"><a href="">Privacy Policy</a></p>
+                        <p class="small"><a href="">Terms and Conditions</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="section footer">
+            <div class="wrap-wide">
+                <div class="stripe"></div>
+                <div class="footer-wrap">
+                    <div class="credits">
+                        <p class="small"><a href="https://nbrook.netlify.app" target="_blank">Code by NateBrook</a></p>
+                    </div>
+                    <div class="legal">
+                        <p class="small"><a href="">Privacy Policy</a></p>
+                        <p class="small"><a href="">Terms and Conditions</a></p>
+                    </div>
+                    <div class="social-icons social-hover">
+                        <a href="https://twitter.com/natebrook11" class="social-ico twitter" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.459,5.5a8.763,8.763,0,0,1-2.471.678A4.337,4.337,0,0,0,21.88,3.794,8.907,8.907,0,0,1,19.144,4.83,4.3,4.3,0,0,0,11.7,7.768a4.446,4.446,0,0,0,.111.983A12.194,12.194,0,0,1,2.935,4.266a4.226,4.226,0,0,0-.582,2.166,4.307,4.307,0,0,0,1.914,3.584,4.292,4.292,0,0,1-1.949-.539V9.53A4.306,4.306,0,0,0,5.77,13.753a4.342,4.342,0,0,1-1.935.075,4.318,4.318,0,0,0,4.028,2.989,8.629,8.629,0,0,1-5.339,1.842A9.277,9.277,0,0,1,1.5,18.6a12.254,12.254,0,0,0,6.613,1.932A12.159,12.159,0,0,0,20.361,8.3c0-.183,0-.367-.013-.551A8.69,8.69,0,0,0,22.5,5.516Z" />
+                            </svg></a>
+                        <a href="https://www.instagram.com/_nbrook_/" class="social-ico instagram" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M12,3.8c2.67,0,2.986.01,4.041.058A5.552,5.552,0,0,1,17.9,4.2a3.31,3.31,0,0,1,1.9,1.9,5.552,5.552,0,0,1,.344,1.857C20.188,9.014,20.2,9.33,20.2,12s-.01,2.986-.058,4.041A5.552,5.552,0,0,1,19.8,17.9a3.31,3.31,0,0,1-1.9,1.9,5.552,5.552,0,0,1-1.857.344c-1.054.048-1.371.058-4.041.058s-2.987-.01-4.041-.058A5.552,5.552,0,0,1,6.1,19.8a3.31,3.31,0,0,1-1.9-1.9,5.552,5.552,0,0,1-.344-1.857C3.812,14.986,3.8,14.67,3.8,12s.01-2.986.058-4.041A5.552,5.552,0,0,1,4.2,6.1,3.31,3.31,0,0,1,6.1,4.2,5.552,5.552,0,0,1,7.959,3.86C9.014,3.812,9.33,3.8,12,3.8M12,2c-2.716,0-3.056.012-4.123.06a7.355,7.355,0,0,0-2.427.465A5.106,5.106,0,0,0,2.525,5.45,7.355,7.355,0,0,0,2.06,7.877C2.012,8.944,2,9.284,2,12s.012,3.056.06,4.123a7.355,7.355,0,0,0,.465,2.427A5.106,5.106,0,0,0,5.45,21.475a7.355,7.355,0,0,0,2.427.465C8.944,21.989,9.284,22,12,22s3.056-.011,4.123-.06a7.355,7.355,0,0,0,2.427-.465,5.106,5.106,0,0,0,2.925-2.925,7.355,7.355,0,0,0,.465-2.427c.048-1.067.06-1.407.06-4.123s-.012-3.056-.06-4.123a7.355,7.355,0,0,0-.465-2.427A5.106,5.106,0,0,0,18.55,2.525a7.355,7.355,0,0,0-2.427-.465C15.056,2.012,14.716,2,12,2Z" />
+                                <path
+                                    d="M12,6.865A5.135,5.135,0,1,0,17.135,12,5.135,5.135,0,0,0,12,6.865Zm0,8.468A3.333,3.333,0,1,1,15.333,12,3.333,3.333,0,0,1,12,15.333Z" />
+                                <circle cx="17.338" cy="6.662" r="1.2" />
+                            </svg></a>
+                        <img class="social-sticker" data-src="/assets/img/OneNil_2021_Sticker_VOL1_FOLLOW.png" uk-img />
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+
+    
+    <script src="/assets/js/navigation.js"></script>
+    <script src="/assets/js/cookies.js"></script>
+    <script src="/assets/js/split-letters.js"></script>
+    <script src="/assets/js/page-transition.js"></script>
+    <script src="/assets/js/observers.js"></script>
+    <script src="/assets/js/uikit.min.js"></script>
+    <script src="/assets/js/masonry.pkgd.min.js"></script>
+    <script src="/assets/js/counter.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            // Check if useruid is already in local storage
+            const userUid = localStorage.getItem('useruid');
+            if (userUid) {
+                // User is already logged in, redirect to another window
+                window.location.href = '/dashboard.html';
+            }
+        });
+    </script>
+</body>
+
+</html>
